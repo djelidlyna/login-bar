@@ -1,0 +1,83 @@
+*{
+    padding:0 ;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    row-gap: 30px;
+    background-color: #1d2b3a;}
+
+    .inputbox{
+        position: relative;
+        width:250px ;
+
+    }
+    .inputbox input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(255,255,255,0.25);
+        background:#1d2b3a ;
+        border-radius: 5px;
+        outline: none;
+        color: aliceblue;
+        font-size: 2em;
+        transition:1s ;
+    }
+    .inputbox span{
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        pointer-events: none;
+        font-size:1.5em;
+        color: rgba(255,255,255,0.25);
+        text-transform: lowercase;
+        transition:0.5s ;
+
+    }
+    .inputbox input :valid~ span,
+    .inputbox input:focus~ span
+     {
+
+color:#00dfc4 ;
+transform:  translateX(10%) translateY(-7px);
+font-size: 0.65em;
+padding: 0 30px;
+background: #1d2b3a;
+border-left: 1px solid #00dfc4;
+border-right:1px solid #00dfc4 ;
+letter-spacing:0.2em ;
+
+    }
+    .inputbox input:valid,
+    .inputbox input:focus{
+        border: 1px solid #00dfc4;
+    }
+    .submit button{
+        position: relative;
+        top: 20px;
+        padding: 15px;
+        width: 200px;
+        border-radius: 15px ;
+        border: 1px solid white;
+        background: rgba(255, 255, 255, 0.174);
+        
+    }
+    .submit p{
+        font-size:20px ;
+        color: azure;
+
+    }
+    .submit button:hover{
+        padding:30px;
+        margin: 10px;
+        background: #00dfc4;
+        transition: 0.5s;
+    }
+    
